@@ -1,1 +1,85 @@
-Team work
+Documentation: Pushing a Project from VSCode to GitHub
+Prerequisites
+Ensure you have Git installed on your machine.
+Have a GitHub account and a repository created where you want to push your project.
+Steps to Push Your Project
+1. Open Your Project in VSCode
+Launch Visual Studio Code.
+Open the folder containing your project by navigating to File > Open Folder.
+2. Initialize Git (if not already done)
+Open the terminal in VSCode by selecting View > Terminal.
+Run the following command to initialize a Git repository:
+bash
+Run
+Copy code
+git init
+3. Add Your Remote Repository
+Set the remote repository URL to your GitHub repository. Use the following command:
+bash
+Run
+Copy code
+git remote add origin https://github.com/mdarman4002/Major-Project-College-NIET-.git
+4. Stage Your Changes
+Stage all your changes for commit by running:
+bash
+Run
+Copy code
+git add .
+5. Commit Your Changes
+Commit the staged changes with a descriptive message:
+bash
+Run
+Copy code
+git commit -m "Initial commit"
+6. Check Your Current Branch
+Check which branch you are currently on:
+bash
+Run
+Copy code
+git branch
+If your branch is named master, you can push it directly. If it’s named main, you will need to ensure you are on that branch.
+7. Push Your Changes
+If your branch is master, push it using:
+bash
+Run
+Copy code
+git push -u origin master
+If you want to rename your branch to main, use:
+bash
+Run
+Copy code
+git branch -m main
+git push -u origin main
+8. Handling Errors
+Error: Remote Origin Already Exists
+If you encounter the error error: remote origin already exists, check your existing remotes:
+bash
+Run
+Copy code
+git remote -v
+If the URL is incorrect, remove the existing remote and add the correct one:
+bash
+Run
+Copy code
+git remote remove origin
+git remote add origin https://github.com/mdarman4002/Major-Project-College-NIET-.git
+Error: src refspec main does not match any
+If you see the error error: src refspec main does not match any, ensure you have made at least one commit. If your branch is named master, push it using:
+bash
+Run
+Copy code
+git push -u origin master
+Error: Repository Not Found
+If you encounter fatal: repository 'https://github.com/mdarman4002/Major-Project-College-NIET-/tree/main/InterviewMate/' not found, it indicates that the remote URL is incorrect. Remove the existing remote and add the correct URL:
+bash
+Run
+Copy code
+git remote remove origin
+git remote add origin https://github.com/mdarman4002/Major-Project-College-NIET-.git
+9. Verify the Push
+After successfully pushing your changes, verify by visiting your GitHub repository at:
+Run
+Copy code
+https://github.com/mdarman4002/Major-Project-College-NIET-
+Conclusion
+By following these steps, you should be able to successfully push your project from Visual Studio Code to GitHub. This documentation serves as a reference for future revisions and troubleshooting.
