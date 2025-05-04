@@ -1,5 +1,7 @@
 import { db } from "@/config/firebase.config";
-import LoaderPage from "@/routes/loader-page";
+import { LoaderPage } from "@/routes/loader-page";
+
+// import LoaderPage from "@/routes/loader-page";
 
 import { User } from "@/types";
 

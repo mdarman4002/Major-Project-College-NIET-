@@ -4,6 +4,7 @@ import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react"; // Import
 import { Link } from "react-router-dom";
 import { Container } from "@/components/container";
 import { MainRoutes } from "@/lib/helper";
+import { MailLogoContainer } from "./mail-logo";
 
 
 interface SocialLinkProps {
@@ -64,10 +65,20 @@ export const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4">About Us</h3>
             <p>
-              We are committed to helping you unlock your full potential with
-              AI-powered tools. Our platform offers a wide range of resources to
-              improve your interview skills and chances of success.
+            We are dedicated to empowering you with AI-driven tools designed to 
+            enhance your interview skills and boost your chances of success.
+             Our platform provides comprehensive resources to help you reach your full potential.
+             <br></br>
+          
             </p>
+
+            <p>
+  For more information, please feel free to contact us at&nbsp;
+  <a href="mailto:ai.interviewmate4u@gmail.com" style={{ display: 'inline-flex', alignItems: 'center' }}>
+    <MailLogoContainer/>
+  </a>
+</p>
+
           </div>
 
           {/* Third Column: Services */}
@@ -89,7 +100,7 @@ export const Footer = () => {
           {/* Fourth Column: Address and Social Media */}
           <div>
             <h3 className="font-bold text-lg mb-4">Contact Us</h3>
-            <p className="mb-4">123 AI Street, Tech City, 12345</p>
+            <p className="mb-4">New Delhi, 110025</p>
             <div className="flex gap-4">
               <SocialLink
                 href="https://facebook.com"

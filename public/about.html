@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Luxury Neon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d9d4b91c.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #000;
+      color: white;
+    }
+    .fade-overlay {
+      background: linear-gradient(to bottom, transparent 40%, #000 100%);
+    }
+    .highlight {
+      color: #9f7aea;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .perspective {
+      perspective: 1000px;
+    }
+    .transform-style {
+      transform-style: preserve-3d;
+    }
+    .hover-3d:hover {
+      transform: rotateX(8deg) rotateY(-8deg) scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <section class="relative h-screen overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?auto=format&fit=crop&w=1600&q=80"
+         class="absolute inset-0 w-full h-full object-cover" alt="Skyscrapers" />
+    <div class="absolute inset-0 fade-overlay"></div>
+    <div class="absolute inset-0 flex items-center justify-center text-center p-4" data-aos="fade-up">
+      <h1 class="text-6xl md:text-8xl font-bold leading-tight tracking-tight" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+        "The most <span style="color: #a20101;">insightful AI </span> interviews <br> are <span style="color: #4a5870;">crafted to </span> mirror <br> human thought — not just asking questions, <br>but understanding the purpose <br> behind every answer"
+      </h1>
+    </div>
+  </section>
+
+  <!-- WHO WE ARE -->
+  <section class="px-6 md:px-20 py-16">
+    <div class="glass p-8 md:p-12" data-aos="fade-up">
+      <div class="flex flex-col md:flex-row justify-between items-start gap-6">
+        
+        <!-- Text Content -->
+        <div class="flex-1">
+          <p class="text-sm uppercase text-gray-400 mb-3">Who are we</p>
+          <h2 class="text-base md:text-lg font-light max-w-3xl text-justify">
+            At <span class="highlight"><b>InterviewMate</b></span>, we are a team of
+            <span class="highlight">passionate technologists, career strategists,
+              and AI enthusiasts</span> committed to transforming the way candidates prepare for interviews.
+            Our platform leverages the power of <span class="highlight">artificial intelligence</span> to offer
+            <span class="highlight">personalized, realistic,
+              and data-driven mock interview experiences.</span>
+            Whether you're a <span class="highlight">student, job seeker,
+              or professional</span> aiming for your next big role,
+            <span class="highlight">InterviewMate is your trusted partner
+              for building confidence, sharpening your skills, and achieving interview success.</span>
+          </h2>
+        </div>
+  
+        <!-- Logo -->
+        <div class="w-80 h-100 md:w-80 md:h-70 shrink-0">
+          <img src="/Users/ishu/Desktop/logo.jpg" alt="InterviewMate Logo" class="w-full h-full object-contain" />
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- GALLERY SECTION -->
+  <section class="px-6 md:px-20 py-20">
+    <h2 class="text-3xl font-light mb-10" data-aos="fade-up"><b>View our highlights</b></h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div class="group perspective" data-aos="zoom-in">
+        <div class="relative transform-style hover-3d transition-transform duration-700 ease-out">
+          <img src="/assets/images-about/images/pix1.jpg" class="rounded-2xl shadow-xl w-full" alt="Gallery Image">
+        </div>
+      </div>
+      <div class="group perspective" data-aos="zoom-in">
+        <div class="relative transform-style hover-3d transition-transform duration-700 ease-out">
+          <img src="/assets/images-about/images/pix2.jpg" class="rounded-2xl shadow-xl w-full" alt="Gallery Image">
+        </div>
+      </div>
+      <div class="group perspective" data-aos="zoom-in">
+        <div class="relative transform-style hover-3d transition-transform duration-700 ease-out">
+          <img src="/assets/images-about/images/pix3.jpg" class="rounded-2xl shadow-xl w-full" alt="Gallery Image">
+        </div>
+      </div>
+      <div class="group perspective" data-aos="zoom-in">
+        <div class="relative transform-style hover-3d transition-transform duration-700 ease-out">
+          <img src="/assets/images-about/images/pix4.jpg" class="rounded-2xl shadow-xl w-full" alt="Gallery Image">
+        </div>
+      </div>
+      <div class="group perspective" data-aos="zoom-in">
+        <div class="relative transform-style hover-3d transition-transform duration-700 ease-out">
+          <img src="/assets/images-about/images/pix5.jpg" class="rounded-2xl shadow-xl w-full" alt="Gallery Image">
+        </div>
+      </div>
+      <div class="group perspective" data-aos="zoom-in">
+        <div class="relative transform-style hover-3d transition-transform duration-700 ease-out">
+          <img src="/assets/images-about/images/pix6.jpg" class="rounded-2xl shadow-xl w-full" alt="Gallery Image">
+        </div>
+      </div>
+      <div class="group perspective" data-aos="zoom-in">
+        <div class="relative transform-style hover-3d transition-transform duration-700 ease-out">
+          <img src="/Users/ishu/Desktop/images/pix7.jpg" class="rounded-2xl shadow-xl w-full" alt="Gallery Image">
+        </div>
+      </div>
+      <div class="group perspective" data-aos="zoom-in">
+        <div class="relative transform-style hover-3d transition-transform duration-700 ease-out">
+          <img src="/Users/ishu/Desktop/images/pix8.jpg" class="rounded-2xl shadow-xl w-full" alt="Gallery Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- TEAM SECTION -->
+   <section class="px-6 md:px-20 py-24">
+    <h2 class="text-3xl font-light mb-10" data-aos="fade-up">Meet Our Team</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div class="glass p-6 rounded-xl" data-aos="fade-up">
+        <img src="https://randomuser.me/api/portraits/men/41.jpg" class="w-24 h-24 rounded-full mb-4" alt="Team Member" />
+        <h3 class="text-xl font-semibold">Member 1</h3>
+        <p class="text-purple-300 mb-3">Strategist</p>
+        <p class="text-sm text-white/80 mb-3">Brief description about what this person does in the team.</p>
+        <div class="flex space-x-4 text-purple-400 text-xl">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="glass p-6 rounded-xl" data-aos="fade-up">
+        <img src="https://randomuser.me/api/portraits/women/51.jpg" class="w-24 h-24 rounded-full mb-4" alt="Team Member" />
+        <h3 class="text-xl font-semibold">Member 2</h3>
+        <p class="text-purple-300 mb-3">Visionary</p>
+        <p class="text-sm text-white/80 mb-3">Brief description about what this person does in the team.</p>
+        <div class="flex space-x-4 text-purple-400 text-xl">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="glass p-6 rounded-xl" data-aos="fade-up">
+        <img src="https://randomuser.me/api/portraits/men/61.jpg" class="w-24 h-24 rounded-full mb-4" alt="Team Member" />
+        <h3 class="text-xl font-semibold">Member 3</h3>
+        <p class="text-purple-300 mb-3">Technologist</p>
+        <p class="text-sm text-white/80 mb-3">Brief description about what this person does in the team.</p>
+        <div class="flex space-x-4 text-purple-400 text-xl">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="glass p-6 rounded-xl" data-aos="fade-up">
+        <img src="https://randomuser.me/api/portraits/women/62.jpg" class="w-24 h-24 rounded-full mb-4" alt="Team Member" />
+        <h3 class="text-xl font-semibold">Member 4</h3>
+        <p class="text-purple-300 mb-3">Planner</p>
+        <p class="text-sm text-white/80 mb-3">Brief description about what this person does in the team.</p>
+        <div class="flex space-x-4 text-purple-400 text-xl">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="glass p-6 rounded-xl" data-aos="fade-up">
+        <img src="https://randomuser.me/api/portraits/men/53.jpg" class="w-24 h-24 rounded-full mb-4" alt="Team Member" />
+        <h3 class="text-xl font-semibold">Member 5</h3>
+        <p class="text-purple-300 mb-3">Researcher</p>
+        <p class="text-sm text-white/80 mb-3">Brief description about what this person does in the team.</p>
+        <div class="flex space-x-4 text-purple-400 text-xl">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="glass p-6 rounded-xl" data-aos="fade-up">
+        <img src="https://randomuser.me/api/portraits/women/64.jpg" class="w-24 h-24 rounded-full mb-4" alt="Team Member" />
+        <h3 class="text-xl font-semibold">Member 6</h3>
+        <p class="text-purple-300 mb-3">Designer</p>
+        <p class="text-sm text-white/80 mb-3">Brief description about what this person does in the team.</p>
+        <div class="flex space-x-4 text-purple-400 text-xl">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>

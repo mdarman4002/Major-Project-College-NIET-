@@ -4,9 +4,11 @@ export const LogoContainer = () => {
   return (
     <Link to = {"/"}>
         <img 
-        src = "assets/svg/logo.svg"
+        //src = "assets/svg/logo.svg"
+       // src = "/assets/img/logo_.jpeg"
+       src = "/assets/img/_logo.jpg"
         alt = ""
-        className="min-w-10 min-h-10 object-contain"
+       className="w-13 h-14 object-contain p-1 rounded"
         />
     
     </Link>
